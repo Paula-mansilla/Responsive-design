@@ -1,0 +1,68 @@
+.letra {
+  background-color: #dbdbdb;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 3rem 1rem;
+  
+
+  border: 6px solid black;
+}
+
+.cuadro{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+}
+ 
+
+
+.card {
+  width: 300px;
+  height: 400px;
+  background: white;
+  border: 1px solid #e2d2a6;
+  padding: 1rem;
+
+  border: 2px solid black;
+}
+
+@media screen and (min-width: 1920px) {
+  body {
+    background-color: rgb(226, 185, 250); /* azul claro */
+  }
+
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1919px) {
+  body {
+    background-color: rgb(253, 211, 171); /* verde claro */
+  }
+
+  .cuadro{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  body {
+    background-color: rgb(255, 178, 178); /* naranja claro */
+  }
+
+  .cuadro {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    background-color: rgb(247, 158, 189); /* rosa claro */
+  }
+
+  .cuadro {
+    grid-template-columns: 1fr;
+  }
+}
